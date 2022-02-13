@@ -1,6 +1,6 @@
 const formatjs = require("./formatjs");
 
-const createBabelConfig = ({ isReact }) => {
+const createBabelConfig = ({ isReact, useFlow }) => {
   // Dependencies
   const devDependencies = [];
   devDependencies.push({
