@@ -1,4 +1,4 @@
-<h1 align="center" style="border-bottom: none;">⚒️ @epranka/create-package</h1>
+<h1 align="center" style="border-bottom: none;">⚒️ @xyz/create-package</h1>
 
 <h3 align="center">Ultimate starter kit for JS, JSX, TS, TSX module</h3>
 
@@ -6,10 +6,10 @@
         <a href="./LICENSE">
     <img alt="license" src="https://img.shields.io/badge/license-ISC-blue.svg" />
   </a>
-   <a href="https://www.npmjs.com/package/@epranka/create-package">
-    <img alt="npm version" src="https://img.shields.io/npm/v/@epranka/create-package.svg?style=flat" />
-  </a> <a href="https://www.npmjs.com/package/@epranka/create-package">
-    <img alt="npm downloads" src="https://img.shields.io/npm/dt/@epranka/create-package.svg?style=flat" />
+   <a href="https://www.npmjs.com/package/@xyz/create-package">
+    <img alt="npm version" src="https://img.shields.io/npm/v/@xyz/create-package.svg?style=flat" />
+  </a> <a href="https://www.npmjs.com/package/@xyz/create-package">
+    <img alt="npm downloads" src="https://img.shields.io/npm/dt/@xyz/create-package.svg?style=flat" />
   </a> <a href="https://travis-ci.org/epranka/create-package">
       <img alt="build status" src="https://travis-ci.org/epranka/create-package.svg?branch=master" />
     </a> <a href="https://travis-ci.org/epranka/create-package">
@@ -45,21 +45,21 @@
 To create package once, package runner is recommended
 
 ```bash
-$ npx @epranka/create-package my-package
+$ npx @xyz/create-package my-package
 
 # or
 
-$ yarn create @epranka/package my-package
+$ yarn create @xyz/package my-package
 ```
 
 If you want to create packages later, install and use this package as follows
 
 ```bash
-$ npm install -g @epranka/create-package
+$ npm install -g @xyz/create-package
 
 # or
 
-$ yarn global add @epranka/create-package
+$ yarn global add @xyz/create-package
 
 # and then use
 
@@ -70,7 +70,7 @@ $ create-package my-package
 You will be asked some questions about package
 
 ```
-@epranka/create-package
+@xyz/create-package
 ✨ Generating package in my-package
 ? Package name my-package
 ? Package description My cat's meow package
@@ -84,7 +84,8 @@ You will be asked some questions about package
 ? Use unit tests ? Yes
 ? Use automatic semantic releases ? Yes
 ? Use Travis ? Yes
-? Repository URL https://github.com/epranka/create-package
+? Use Flow ? Yes
+? Repository URL https://github.com/xyzrepo/create-package
 ```
 
 If automated semantic releases are selected, package generation will take longer and you will be prompted for semantic release options
@@ -126,7 +127,7 @@ When the package created, the **package.json** file has a **private** property s
 You can create a package without user interaction using the _--silent_ option. Pass package values along with the command. See section [CLI Help](#cli-help) below
 
 ```
-  $ create-package my-package --name my-package --description "My cat's meow package" --type tsx --author "Edvinas Pranka" --email "epranka@gmail.com" --license ISC --travis
+  $ create-package my-package --name my-package --description "My cat's meow package" --type js --author "Baker Shamlan" --email "root@baker.io" --license ISC --travis
 ```
 
 If you choose _--semantic-release_ option in silent mode, you will have to setup it after the package has been created. Use **semantic-release-cli** in the root of the package
@@ -141,7 +142,7 @@ After setup, you can uninstall the **semantic-release-cli** package
 ## CLI Help
 
 ```
-@epranka/create-package
+@xyz/create-package
 
 Usage:
   $ create-package [out-dir]
@@ -272,31 +273,31 @@ my-package
 
 ## Badge
 
-Let people know that your package is generated using **@epranka/create-package** by including this badge in your readme
+Let people know that your package is generated using **@xyz/create-package** by including this badge in your readme
 
-<a href="https://github.com/epranka/create-package">
-  <img alt="generated with" src="https://img.shields.io/badge/generated%20with-%40epranka%2Fcreate--package-blue" />
+<a href="https://github.com/xyzrepo/create-package">
+  <img alt="generated with" src="https://img.shields.io/badge/generated%20with-%40xyz%2Fcreate--package-blue" />
 </a>
 
 Using Markdown
 
 ```
-[![generated with @epranka/create-package](https://img.shields.io/badge/generated%20with-%40epranka%2Fcreate--package-blue)](https://github.com/epranka/create-package)
+[![generated with @xyz/create-package](https://img.shields.io/badge/generated%20with-%40xyz%2Fcreate--package-blue)](https://github.com/epranka/create-package)
 ```
 
 Using HTML
 
 ```
 <a href="https://github.com/epranka/create-package">
-  <img alt="generated with" src="https://img.shields.io/badge/generated%20with-%40epranka%2Fcreate--package-blue" />
+  <img alt="generated with" src="https://img.shields.io/badge/generated%20with-%40xyz%2Fcreate--package-blue" />
 </a>
 ```
 
 ## Author
 
-Edvinas pranka ([epranka@gmail.com](mailto:epranka@gmail.com))
+Baker Shamlan ([root@baker.io](mailto:root@baker.io))
 
-Follow on Twitter [@epranka](https://twitter.com/epranka)
+Follow on Twitter [@xyzdev__](https://twitter.com/xyzdev__)
 
 https://www.kodmina.lt
 
@@ -304,7 +305,7 @@ https://www.kodmina.lt
 
 ISC License
 
-Copyright (c) 2019, Edvinas Pranka (epranka@gmail.com)
+Copyright (c) 2022, Baker Shamlan (root@baker.io)
 
 Permission to use, copy, modify, and/or distribute this software for any
 purpose with or without fee is hereby granted, provided that the above

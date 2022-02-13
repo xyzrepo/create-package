@@ -263,6 +263,7 @@ module.exports = {
           jest_config_js: "useTests",
           travis_yml: "useTravis",
           releaserc: "useSemanticRelease",
+          _flowconfig: "useFlow"
         },
       },
     ];
@@ -288,6 +289,7 @@ module.exports = {
         _package_json: "package.json",
         _tsconfig_json: "tsconfig.json",
         _eslint_json: ".eslintrc.json",
+        _flowconfig: ".flowconfig",
       },
     });
 

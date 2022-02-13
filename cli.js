@@ -56,7 +56,7 @@ cli
       return showEnvInfo();
     }
     console.log();
-    console.log(chalk`{cyan @epranka/create-package v${version}}`);
+    console.log(chalk`{cyan @xyz/create-package v${version}}`);
     console.log(chalk`✨ Generating package in {cyan ${outDir}}`);
 
     const { verbose, silent } = cliOptions;
