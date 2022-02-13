@@ -5,7 +5,9 @@ const createBabelConfig = ({ isReact }) => {
   const devDependencies = [];
   devDependencies.push({
     "@babel/core": "^7.7.4",
-    "@babel/preset-env": "^7.7.4"
+    "@babel/preset-env": "^7.7.4",
+    "@babel/runtime": "^7.17.2",
+    "@babel/plugin-transform-runtime": "^7.17.0",
   });
 
   if (isReact) {
@@ -20,7 +22,10 @@ const createBabelConfig = ({ isReact }) => {
     presets.push(`@babel/react`);
   }
   const babelrc = `module.exports = {
-      presets: [${presets.map(p => JSON.stringify(p)).join(",")}]
+      presets: [${presets.map(p => JSON.stringify(p)).join(",")}],
+      plugins: [
+        ["@babel/transform-runtime"]
+      ]
   }`;
 
   return {
