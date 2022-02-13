@@ -1,0 +1,4 @@
+// @flow
+const Hello: string = "World";
+
+export default Hello;

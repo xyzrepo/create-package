@@ -1,3 +1,11 @@
+<% if (useFlow === true) { %>
+// @flow
+const Hello: string = "World";
+
+export default Hello;
+
+<% } else { %>
 const Hello = "World";
 
 export default Hello;
+<% } %>

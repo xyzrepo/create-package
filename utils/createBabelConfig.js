@@ -28,7 +28,7 @@ const createBabelConfig = ({ isReact, useFlow }) => {
     presets.push(`@babel/react`);
   }
   if (useFlow) {
-    presets.push(`@babel/preset-flow`);
+    presets.push(`@babel/flow`);
   }
   const plugins = [`@babel/transform-runtime`];
   const babelrc = `module.exports = {
