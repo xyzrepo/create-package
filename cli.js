@@ -15,7 +15,7 @@ const showEnvInfo = async () => {
     System: ["OS", "CPU"],
     Binaries: ["Node", "Yarn", "npm"],
     Browsers: ["Chrome", "Edge", "Firefox", "Safari"],
-    npmGlobalPackages: ["@epranka/create-package"]
+    npmGlobalPackages: ["@xyz/create-package"]
   });
   console.log(result);
   process.exit(1);

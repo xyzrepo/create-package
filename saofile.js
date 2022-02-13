@@ -27,6 +27,7 @@ module.exports = {
     const year = new Date().getFullYear();
     const useEs = this.answers.useEs;
     const useTests = this.answers.useTests;
+    const useFlow = this.answers.useFlow;
     const useSemanticRelease = this.answers.useSemanticRelease;
     const useTravis = this.answers.useTravis;
     const repository = this.answers.repository;
@@ -172,7 +173,7 @@ module.exports = {
     });
     package.devDependencies.push(...rollupConfig.devDependencies);
 
-    const babelConfig = createBabelConfig({ isReact });
+    const babelConfig = createBabelConfig({ isReact, useFlow });
     package.devDependencies.push(...babelConfig.devDependencies);
 
     let tsconfigConfig;
@@ -213,6 +214,7 @@ module.exports = {
       useUMD,
       umdName,
       useEs,
+      useFlow
     });
 
     return {

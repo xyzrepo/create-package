@@ -16,16 +16,25 @@ const createBabelConfig = ({ isReact }) => {
     });
   }
 
+  if (useFlow) {
+    devDependencies.push({
+      "@babel/preset-flow": "*",
+      "@babel/cli": "*",
+    })
+  }
+
   // Config file
   const presets = [`@babel/env`];
   if (isReact) {
     presets.push(`@babel/react`);
   }
+  if (useFlow) {
+    presets.push(`@babel/preset-flow"`);
+  }
+  const plugins = [`@babel/transform-runtime`];
   const babelrc = `module.exports = {
       presets: [${presets.map(p => JSON.stringify(p)).join(",")}],
-      plugins: [
-        ["@babel/transform-runtime"]
-      ]
+      plugins: [${plugins.map(p => JSON.stringify(p)).join(",")}],
   }`;
 
   return {

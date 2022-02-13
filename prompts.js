@@ -22,7 +22,8 @@ const repository = options.repository;
 const useSemanticRelease = !!options.semanticRelease;
 const useTests = !!options.tests;
 const useNPM = !!options.npm;
-const type = options.type || "ts";
+const useFlow = !!options.flow
+const type = options.type || "js";
 
 const required = message => value => {
   return value && value.trim() ? true : message;
@@ -134,6 +135,12 @@ module.exports = [
     message: "Use unit tests ?",
     type: "confirm",
     default: useTests
+  },
+  {
+    name: "useFlow",
+    message: "Use Flow - Static Type Checker for Javascript ?",
+    type: "confirm",
+    default: useFlow
   },
   {
     name: "useSemanticRelease",

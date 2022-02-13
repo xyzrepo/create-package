@@ -1,5 +1,5 @@
 {
-  "name": "@epranka/create-package",
+  "name": "@xyz/create-package",
   "description": "Ultimate starter kit for JS, JSX, TS, TSX module",
   "version": "5.0.2",
   "publishConfig": {
@@ -36,7 +36,7 @@
   "bin": "./cli.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/epranka/create-package.git"
+    "url": "https://github.com/xyzrepo/create-package.git"
   },
   "keywords": [
     "javascript",
@@ -65,11 +65,11 @@
     "travis",
     "create"
   ],
-  "author": "Edvinas Pranka, Kodmina, https://www.kodmina.lt",
+  "author": "Baker Shamlan, XYZ",
   "contributors": [
     {
-      "name": "Edvinas Pranka",
-      "email": "epranka@gmail.com"
+      "name": "Baker Shamlan",
+      "email": "root@baker.io"
     }
   ],
   "license": "ISC",
