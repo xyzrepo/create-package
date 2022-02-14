@@ -1,7 +1,7 @@
 {
   "name": "@xyz/create-package",
   "description": "Ultimate starter kit for JS, JSX, TS, TSX module + Flow type checking for JS",
-  "version": "5.0.6",
+  "version": "5.0.7",
   "publishConfig": {
     "access": "public"
   },
