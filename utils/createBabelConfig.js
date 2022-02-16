@@ -30,7 +30,16 @@ const createBabelConfig = ({ isReact, useFlow }) => {
   if (useFlow) {
     presets.push(`@babel/flow`);
   }
-  const plugins = [`@babel/transform-runtime`];
+  const plugins = [];
+  plugins.push([
+    `@babel/transform-runtime`,
+    {
+      absoluteRuntime: false,
+      corejs: false,
+      helpers: true,
+      regenerator: true,
+      runtimeHelpers: true
+    }])
   const babelrc = `module.exports = {
       presets: [${presets.map(p => JSON.stringify(p)).join(",")}],
       plugins: [${plugins.map(p => JSON.stringify(p)).join(",")}],
